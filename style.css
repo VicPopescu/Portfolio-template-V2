@@ -151,11 +151,17 @@ header{
 .achievements {
     order: 1;
     width: 30%;
+    margin: 0 5vw;
 }
 
 
-.achievements ul {
+.achievements ul{
     list-style: none;
+}
+
+.achievements ul li{
+    display: inline-block;
+    margin-bottom: 4px;
 }
 
 .achievements img {
