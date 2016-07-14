@@ -1,7 +1,8 @@
 /* ========== IMPORTS ==========*/
 
 @import 'https://fonts.googleapis.com/css?family=Open+Sans:400,700';
-@import url(https://fonts.googleapis.com/css?family=Roboto:300);
+
+@import url(https://fonts.googleapis.com/css?family=Roboto:300,900);
 
 /* ========== /IMPORTS ==========*/
 
@@ -196,7 +197,7 @@
 .achievements {
     order: 1;
     height: 60%;
-    width: 23%;
+    width: 24%;
     margin: auto 5%;
 }
 
@@ -295,15 +296,17 @@
     left: 0;
     width: 5px;
     height: 100%;
-    background-color: rgb(255, 51, 0);
+    background-color: rgb(219, 70, 30);
 }
 
 .skills-description h2 {
     position: relative;
     font-size: 25px;
     text-align: center;
-    color: white;
-    background-color: rgb(38, 77, 115);
+    color: #CBD0D6;
+    text-shadow: 1px 1px #737B86;
+    background-color: #333366;
+    background-color: rgb(45,62,80);
 }
 
 .skills ul {
@@ -313,10 +316,13 @@
     padding: 0;
 }
 
+.skill-level{
+    float: right;
+}
+
+
 .testimonials-header {
     order: 3;
-    font-size: 20px;
-    font-weight: 700;
 }
 
 .testimonials {
@@ -333,6 +339,13 @@
     font-style: italic;
     font-size: 13px;
 }
+
+.sub-title{       /* h2 subtitles */
+    color: black;
+    font-size: 20px;
+    font-weight: 900;
+}
+
 
 
 /* ========== /SKILLS ==========*/
@@ -392,6 +405,8 @@
     height: 400px;
     width: 98.792vw;
     text-align: center;
+    
+    background: #FFF url(img/cv-back.jpg) center center/cover no-repeat;
 }
 
 .contact ul {
