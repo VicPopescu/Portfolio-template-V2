@@ -202,6 +202,7 @@ header{
     overflow: hidden;
     height: 100vh;
     width: 98.792vw;
+    
 }
 
 .skills-header-title{
@@ -218,6 +219,8 @@ header{
 .skills ul{
     list-style: none;
     text-align: left;
+    margin-left: 0;
+    padding: 0;
 }
 
 .testimonials-header{
@@ -229,12 +232,15 @@ header{
 .testimonials{
     order:4;
     display:flex;
+    text-align: center;
 }
 
 .testimonials blockquote{
+    padding: 30px;
+    margin: 0 20px;
+    width: 300px;
     font-style: italic;
-    font-size: 15px;
-    
+    font-size: 13px;
 }
 
 
@@ -248,9 +254,13 @@ header{
 
 .experience {
     width: 98.792vw;
-    padding-top: 20%;
-    padding-bottom: 20%;
+    height: 100vh;
     text-align: center;
+    background-color: darkgrey;
+}
+
+.experience ul{
+    list-style: none;
 }
 
 /* ========== /EXPERIENCE ==========*/
