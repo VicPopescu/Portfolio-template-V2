@@ -2,10 +2,6 @@
 
 /* ----- GENERAL ----- */
 
-ul {
-    list-style-type: none;
-}
-
 html,
 body,
 section,
@@ -40,7 +36,7 @@ header{
     display: inline-block;
     padding: 10px 15px;
     text-decoration: none;
-    width: 200px;
+    width: 180px;
     height: 40px;
 }
 
@@ -135,15 +131,19 @@ header{
 }
 
 .achievements {
+    display: flex;
     order: 1;
+    
     width: 30%;
 }
 
-.achievements ul li {
-    display: inline-block;
+
+.achievements ul {
+    list-style: none;
 }
 
 .achievements img {
+    display: inline-block;
 }
 
 
