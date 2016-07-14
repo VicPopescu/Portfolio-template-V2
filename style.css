@@ -59,6 +59,48 @@
     margin-top: 0;
 }
 
+.left-side-nav {
+    position: fixed;
+    background-color: rgb(219, 70, 30);
+    width: 30px;
+    height: 140px;
+    top: 40%;
+}
+
+.dot-nav ul {
+    position: relative;
+    display: inline-block;
+    margin: 20px 0;
+    padding: 0;
+    list-style: none;
+    cursor: default;
+}
+
+.dot-nav li {
+    position: relative;
+    display: block;
+    float: left;
+    margin: 0 10px;
+    width: 16px;
+    height: 16px;
+    cursor: pointer;
+}
+
+.dot-nav li a {
+    top: 0;
+    left: 0;
+    width: 40%;
+    height: 40%;
+    outline: none;
+    border-radius: 50%;
+    background-color: #fff;
+    background-color: rgba(255, 255, 255, 1);
+    text-indent: -999em;
+    cursor: pointer;
+    /* make the text accessible to screen readers */
+    position: absolute;
+}
+
 
 /* ========== /NAV ==========*/
 
@@ -154,7 +196,7 @@
 .achievements {
     order: 1;
     height: 60%;
-    width: 25%;
+    width: 23%;
     margin: auto 5%;
 }
 
@@ -284,6 +326,7 @@
 }
 
 .testimonials blockquote {
+    background-color: white;
     padding: 30px;
     margin: 0 20px;
     width: 300px;
@@ -321,7 +364,8 @@
     padding: 0;
     margin: 0;
 }
-.experience ul li{
+
+.experience ul li {
     display: inline-block;
 }
 
