@@ -2,17 +2,16 @@
 
 @import 'https://fonts.googleapis.com/css?family=Open+Sans:400,700';
 
+@import url(https://fonts.googleapis.com/css?family=Roboto:300);
+
 /* ========== /IMPORTS ==========*/
 
 
 /* ========== GENERAL ==========*/
 
-html,
-body,
-section,
-header {
-    font-family: 'Open Sans', sans-serif;
-    font-weight: 400;
+*{
+    font-family: 'Roboto','Open Sans', sans-serif;
+    font-weight: 300;
 }
 
 
@@ -218,6 +217,7 @@ header {
     overflow: hidden;
     height: 100vh;
     width: 98.792vw;
+    background-color: #F0F1F6;
 }
 
 .skills-header-title {
@@ -246,16 +246,30 @@ header {
     padding: 30px;
     margin: 0 20px;
     width: 300px;
+    font-size: 20px;
+}
+
+.skills-title-span{
+    position: absolute;
+    left: 0;
+    width: 5px;
+    height: 100%;
+    background-color: rgb(255, 51, 0);
 }
 
 .skills-description h2{
-    font-size: 20px;
+    position: relative;
+    font-size: 25px;
+    text-align: center;
+    color: white;
+    background-color: rgb(38, 77, 115);
 }
 
 .skills ul {
     list-style: none;
     text-align: left;
-    margin-left: 0;
+    margin: 0;
+    padding: 0;
 }
 
 .testimonials-header {
