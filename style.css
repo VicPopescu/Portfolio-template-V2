@@ -149,6 +149,7 @@
     min-height: 100vh;
     height: auto;
     width: 98.792vw;
+    background-color: #F0F1F6;
 }
 
 
@@ -302,7 +303,7 @@
     width: 98.792vw;
     height: 100vh;
     text-align: center;
-    background-color: darkgrey;
+    background-color: #E3E4E9;
 }
 
 .experience ul {
