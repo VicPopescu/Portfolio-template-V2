@@ -1,19 +1,21 @@
 /* ========== IMPORTS ==========*/
 
-
 @import 'https://fonts.googleapis.com/css?family=Open+Sans:400,700';
 
 /* ========== /IMPORTS ==========*/
+
 
 /* ========== GENERAL ==========*/
 
 html,
 body,
 section,
-header{
+header {
     font-family: 'Open Sans', sans-serif;
     font-weight: 400;
 }
+
+
 /* ========== /GENERAL ==========*/
 
 
@@ -58,6 +60,7 @@ header{
     color: #000;
     margin-top: 0;
 }
+
 
 /* ========== /NAV ==========*/
 
@@ -125,6 +128,7 @@ header{
     padding-right: 5px;
 }
 
+
 /* ========== /HEADER ==========*/
 
 
@@ -136,39 +140,38 @@ header{
     display: -moz-box;
     display: -ms-flexbox;
     display: flex;
-    justify-content:center;
+    -webkit-flex-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items:center;
+    justify-content: center;
+    flex-direction: row;
     overflow: hidden;
-    height: 100vh;
+    min-height: 100vh;
+    height: auto;
     width: 98.792vw;
-    padding-top: 10%;
 }
 
-.about-me {
+
+.about-me, .achievements{
     order: 1;
-    width: 30%;
+    height: 60%;
+    width: 25%;
+    margin: auto 5%;
 }
 
-.achievements {
-    order: 1;
-    width: 30%;
-    margin: 0 5vw;
-}
-
-
-.achievements ul{
+.achievements ul {
     list-style: none;
     margin: 0;
     padding: 0;
 }
 
-.achievements ul li{
+.achievements ul li {
     display: inline-block;
-    margin-bottom: 4px;
 }
 
-.achievements img {
-    
-}
+.achievements img {}
+
 
 /* ========== /ABOUT ==========*/
 
@@ -178,17 +181,22 @@ header{
 .portfolio {
     height: 100vh;
     width: 98.792vw;
-    padding-top: 15%;
+    padding-top: 5%;
     color: #ffffff;
     color: rgb(230, 230, 230);
     background: #000 url(https://pixabay.com/static/uploads/photo/2015/09/02/12/30/foot-bridge-918476_960_720.jpg) center center/cover no-repeat;
     text-align: center;
 }
 
+.portfolio h1 {
+    margin-bottom: 50px;
+}
+
 .portfolio ul li {
     display: inline-block;
     margin-bottom: 4px;
 }
+
 
 /* ========== /PORTFOLIO ==========*/
 
@@ -210,49 +218,65 @@ header{
     overflow: hidden;
     height: 100vh;
     width: 98.792vw;
-    
 }
 
-.skills-header-title{
+.skills-header-title {
     order: 1;
-    margin: 10vh;
-}
-.skills-description{
-    order: 2;
-    display: flex;
-    width: 700px;
-    
+    margin: 5vh;
 }
 
-.skills ul{
+.skills-description {
+    order: 2;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+}
+
+.skill1,
+.skill2,
+.skill3 {
+    padding: 30px;
+    margin: 0 20px;
+    width: 300px;
+}
+
+.skills-description h2{
+    font-size: 20px;
+}
+
+.skills ul {
     list-style: none;
     text-align: left;
     margin-left: 0;
-    padding: 0;
 }
 
-.testimonials-header{
+.testimonials-header {
     order: 3;
     font-size: 20px;
     font-weight: 700;
 }
 
-.testimonials{
-    order:4;
-    display:flex;
+.testimonials {
+    order: 4;
+    display: flex;
     text-align: center;
 }
 
-.testimonials blockquote{
+.testimonials blockquote {
     padding: 30px;
     margin: 0 20px;
     width: 300px;
     font-style: italic;
     font-size: 13px;
 }
-
-
-
 
 
 /* ========== /SKILLS ==========*/
@@ -267,9 +291,10 @@ header{
     background-color: darkgrey;
 }
 
-.experience ul{
+.experience ul {
     list-style: none;
 }
+
 
 /* ========== /EXPERIENCE ==========*/
 
@@ -332,5 +357,6 @@ header{
     position: absolute;
     top: 10px;
 }
+
 
 /* ========== /CONTACT ==========*/
