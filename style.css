@@ -1,6 +1,11 @@
+/* ========== IMPORTS ==========*/
+
+
 @import 'https://fonts.googleapis.com/css?family=Open+Sans:400,700';
 
-/* ----- GENERAL ----- */
+/* ========== /IMPORTS ==========*/
+
+/* ========== GENERAL ==========*/
 
 html,
 body,
@@ -9,9 +14,10 @@ header{
     font-family: 'Open Sans', sans-serif;
     font-weight: 400;
 }
+/* ========== /GENERAL ==========*/
 
 
-/* ----- NAV ------ */
+/* ========== NAV ==========*/
 
 .top-nav {
     position: fixed;
@@ -40,8 +46,6 @@ header{
     height: 40px;
 }
 
-
-
 .top-nav ul li:hover a {
     color: #FFFFFF;
     background-color: #000;
@@ -55,8 +59,7 @@ header{
     margin-top: 0;
 }
 
-
-/* ----- /NAV ------ */
+/* ========== /NAV ==========*/
 
 
 /* ========== HEADER ==========*/
@@ -103,13 +106,29 @@ header{
     font-size: 110%;
 }
 
-.home-arrows-icon {}
+.home-arrows-icon {
+    text-align: center;
+    -ms-transform: rotate(270deg);
+    -webkit-transform: rotate(270deg);
+    transform: rotate(270deg);
+}
 
+.home-arrows-icon a {
+    color: white;
+    font-size: 30px;
+    text-decoration: none;
+}
+
+.home-arrows-icon a:hover {
+    color: whitesmoke;
+    text-decoration: none;
+    padding-right: 5px;
+}
 
 /* ========== /HEADER ==========*/
 
 
-/* ABOUT */
+/* ========== ABOUT ==========*/
 
 .about {
     display: -webkit-box;
@@ -118,7 +137,6 @@ header{
     display: -ms-flexbox;
     display: flex;
     justify-content:center;
-    flex-direction: row;
     overflow: hidden;
     height: 100vh;
     width: 98.792vw;
@@ -131,9 +149,7 @@ header{
 }
 
 .achievements {
-    display: flex;
     order: 1;
-    
     width: 30%;
 }
 
@@ -143,11 +159,13 @@ header{
 }
 
 .achievements img {
-    display: inline-block;
+    
 }
 
+/* ========== /ABOUT ==========*/
 
-/* PORTFOLIO */
+
+/* ========== PORTFOLIO ==========*/
 
 .portfolio {
     height: 100vh;
@@ -164,8 +182,10 @@ header{
     margin-bottom: 4px;
 }
 
+/* ========== /PORTFOLIO ==========*/
 
-/* SKILLS */
+
+/* ========== SKILLS ==========*/
 
 .skills {
     width: 98.792vw;
@@ -174,8 +194,10 @@ header{
     text-align: center;
 }
 
+/* ========== /SKILLS ==========*/
 
-/* EXPERIENCE */
+
+/* ========== EXPERIENCE ==========*/
 
 .experience {
     width: 98.792vw;
@@ -184,8 +206,10 @@ header{
     text-align: center;
 }
 
+/* ========== /EXPERIENCE ==========*/
 
-/* CONTACT */
+
+/* ========== CONTACT ==========*/
 
 .contact {
     width: 100%;
