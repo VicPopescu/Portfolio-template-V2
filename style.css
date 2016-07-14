@@ -116,19 +116,25 @@ header{
 /* ABOUT */
 
 .about {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    justify-content:center;
+    overflow: hidden;
     height: 100vh;
     width: 98.792vw;
-    text-align: center;
 }
 
 .about-me {
+    order: 1;
     width: 40%;
-    display: inline-block;
 }
 
 .achievements {
+    order: 1;
     width: 40%;
-    display: inline-block;
 }
 
 .achievements ul li {
@@ -136,7 +142,6 @@ header{
 }
 
 .achievements img {
-    margin-bottom: 2px;
 }
 
 
