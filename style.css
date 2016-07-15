@@ -336,8 +336,13 @@
 
 .skill-level{
     float: right;
+    display: none;
 }
 
+
+.svg-bullets{
+    float: right;
+}
 
 .testimonials-header {
     order: 3;
