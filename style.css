@@ -2,7 +2,7 @@
 
 @import 'https://fonts.googleapis.com/css?family=Open+Sans:400,700';
 
-@import url(https://fonts.googleapis.com/css?family=Roboto:300,900);
+@import url(https://fonts.googleapis.com/css?family=Roboto:300,700,900);
 
 /* ========== /IMPORTS ==========*/
 
@@ -12,6 +12,12 @@
 * {
     font-family: 'Roboto', 'Open Sans', sans-serif;
     font-weight: 300;
+}
+
+.page-title{
+    margin: 5vh;
+    font-weight: 300;
+    letter-spacing: 2px;
 }
 
 
@@ -277,7 +283,6 @@
 
 .skills-header-title {
     order: 1;
-    margin: 5vh;
 }
 
 .skills-description {
@@ -415,7 +420,7 @@
     flex-direction: column;
     overflow: hidden;
     background-color: rgb(115, 115, 115);
-    height: 400px;
+    height: 600px;
     width: 98.792vw;
     text-align: center;
     
@@ -425,6 +430,25 @@
 .contact ul {
     list-style: none;
 }
+
+.contact-subtitle{
+    font-size: 15px;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+.big-font{
+    font-size: 25px;
+    letter-spacing: 2px;
+}
+
+.contact-small-name{
+    font-size: 10px;
+            
+
+}
+
+
 
 
 /* ========== /CONTACT ==========*/
