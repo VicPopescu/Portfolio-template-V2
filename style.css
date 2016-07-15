@@ -1,7 +1,6 @@
 /* ========== IMPORTS ==========*/
 
 @import 'https://fonts.googleapis.com/css?family=Open+Sans:400,700';
-
 @import url(https://fonts.googleapis.com/css?family=Roboto:300,700,900);
 
 /* ========== /IMPORTS ==========*/
@@ -14,7 +13,7 @@
     font-weight: 300;
 }
 
-.page-title{
+.page-title {
     margin: 5vh;
     font-weight: 300;
     letter-spacing: 2px;
@@ -110,17 +109,18 @@
     position: absolute;
 }
 
-.dot-nav li a:hover{
-    text-indent: 2em;   
+.dot-nav li a:hover {
+    text-indent: 2em;
 }
 
-.blend{
+.blend {
     mix-blend-mode: difference;
 }
 
-.blend-side-nav{
+.blend-side-nav {
     mix-blend-mode: exclusion;
 }
+
 
 /* ========== /NAV ==========*/
 
@@ -303,7 +303,7 @@
 .skill1,
 .skill2,
 .skill3 {
-    padding: 30px;
+    padding: 25px;
     margin: 0 20px;
     width: 300px;
     font-size: 20px;
@@ -324,7 +324,7 @@
     color: #CBD0D6;
     text-shadow: 1px 1px #737B86;
     background-color: #333366;
-    background-color: rgb(45,62,80);
+    background-color: rgb(45, 62, 80);
 }
 
 .skills ul {
@@ -334,13 +334,12 @@
     padding: 0;
 }
 
-.skill-level{
+.skill-level {
     float: right;
     display: none;
 }
 
-
-.svg-bullets{
+.svg-bullets {
     float: right;
 }
 
@@ -355,20 +354,33 @@
 }
 
 .testimonials blockquote {
-    background-color: white;
-    padding: 30px;
+    background-color: #FFF;
+    color: #AFBABD;
+    -moz-border-radius: 6px;
+    -webkit-border-radius:6px;
+    border-radius: 6px;
+    padding: 20px;
     margin: 0 20px;
     width: 300px;
     font-style: italic;
     font-size: 13px;
 }
 
-.sub-title{       /* h2 subtitles */
+.author {
+    border-color: white #F0F1F6 white #F0F1F6;
+    border-style: solid;
+    border-width: 20px 20px 0 20px;
+    height: 0;
+    width: 0;
+    margin-left: 90px;
+}
+
+.sub-title {
+    /* h2 subtitles */
     color: black;
     font-size: 20px;
     font-weight: 900;
 }
-
 
 
 /* ========== /SKILLS ==========*/
@@ -425,10 +437,9 @@
     flex-direction: column;
     overflow: hidden;
     background-color: rgb(115, 115, 115);
-    height: 600px;
+    height: 500px;
     width: 98.792vw;
     text-align: center;
-    
     background: #FFF url(img/cv-back.jpg) center center/cover no-repeat;
 }
 
@@ -436,24 +447,20 @@
     list-style: none;
 }
 
-.contact-subtitle{
+.contact-subtitle {
     font-size: 15px;
     font-weight: 700;
     letter-spacing: 1px;
 }
 
-.big-font{
+.big-font {
     font-size: 25px;
     letter-spacing: 2px;
 }
 
-.contact-small-name{
+.contact-small-name {
     font-size: 10px;
-            
-
 }
-
-
 
 
 /* ========== /CONTACT ==========*/
