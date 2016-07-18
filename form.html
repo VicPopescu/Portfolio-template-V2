@@ -46,7 +46,7 @@
             <p>
                 <label for="name">
                     <span>Name:</span>
-                    <input type="text" id="name" name="name" placeholder="Your Name" required />
+                    <input type="text" id="name" name="name" maxlength="20" placeholder="Your Name" required />
                     <strong><abbr title="required">*</abbr></strong>
                 </label>
             </p>
@@ -54,7 +54,7 @@
             <p>
                 <label for="surname">
                     <span>Surname: </span>
-                    <input type="text" id="surname" name="surname" placeholder="Family Name" required />
+                    <input type="text" id="surname" name="surname" maxlength="20" placeholder="Family Name" required />
                     <strong><abbr title="required">*</abbr></strong>
                 </label>
             </p>
@@ -62,7 +62,7 @@
             <p>
                 <label for="telno">
                     <span>Tel:</span>
-                    <input type="tel" id="telno" name="telno" placeholder="e.g. +40745121212" required />
+                    <input type="tel" id="telno" name="telno" maxlength="15" placeholder="e.g. +40745121212" required />
                     <strong><abbr title="required">*</abbr></strong>
                 </label>
             </p>
@@ -70,7 +70,7 @@
             <p>
                 <label for="mail">
                     <span>E-mail: </span>
-                    <input type="email" id="mail" name="usermail" placeholder="ghita@inteligentu.com" required />
+                    <input type="email" id="mail" name="usermail" maxlength="25" placeholder="ghita@inteligentu.com" required />
                     <strong><abbr title="required">*</abbr></strong>
                 </label>
             </p>
@@ -81,7 +81,7 @@
 
         <fieldset>
             <legend>Message</legend>
-            <textarea name="textarea" rows="10" cols="70" id="message" placeholder="Mama are mere"></textarea>
+            <textarea name="textarea" maxlength="500" rows="10" cols="70" id="message" placeholder="Mama are mere"></textarea>
         </fieldset>
 
 
