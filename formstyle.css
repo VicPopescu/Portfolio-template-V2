@@ -1,0 +1,24 @@
+*{
+    color: black;
+}
+
+body {
+    width: 50%;
+    margin: 0 auto;
+}
+
+fieldset{
+    width: 50%;
+    padding: 0;
+    border: 0;
+}
+
+.gender-fieldset{
+    border: 0;
+}
+
+.gender-fieldset ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}

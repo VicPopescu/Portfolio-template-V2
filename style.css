@@ -440,7 +440,7 @@
     height: 500px;
     width: 98.792vw;
     text-align: center;
-    background: #FFF url(img/cv-back.jpg) center center/cover no-repeat;
+    background: #FFF url(Img/cv-back.jpg) center center/cover no-repeat;
 }
 
 .contact ul {
@@ -460,6 +460,14 @@
 
 .contact-small-name {
     font-size: 10px;
+}
+
+.form{
+    margin-bottom: 4%;
+}
+
+.form a:hover{
+    text-decoration: none;
 }
 
 
