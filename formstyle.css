@@ -1,25 +1,7 @@
-
-fieldset{
-    width: 50%;
-    padding: 0;
-    border: 0;
+body{
+    background-color: rgb(45, 62, 80);
+    color: white;
 }
-
-.gender-fieldset{
-    border: 0;
-}
-
-.gender-fieldset ul{
-    list-style: none;
-    margin: 0;
-    padding: 0;
-}
-
-
-
-
-
-/* ------------------------------------------------*/
 
 .contact-form {
     margin:10px auto;
@@ -67,41 +49,43 @@ select{
 .contact-form input[type=number]:focus,
 .contact-form input[type=search]:focus,
 .contact-form input[type=time]:focus,
-.contact-form input[type=url]:focus,
 .contact-form input[type=email]:focus,
+.contact-form input[type=tel]:focus,
 .contact-form textarea:focus, 
 .contact-form select:focus{
-    -moz-box-shadow: 0 0 8px #88D5E9;
-    -webkit-box-shadow: 0 0 8px #88D5E9;
-    box-shadow: 0 0 8px #88D5E9;
-    border: 1px solid #88D5E9;
-}
-.form-style-1 .field-divided{
-    width: 49%;
+    -moz-box-shadow: 0 0 8px rgb(219, 70, 30);
+    -webkit-box-shadow: 0 0 8px rgb(219, 70, 30);
+    box-shadow: 0 0 8px rgb(219, 70, 30);
+    border: 1px solid rgb(219, 70, 30);
+    border-radius:5px;
 }
 
-.form-style-1 .field-long{
+.contact-form .field-long{
+    width: 97%;
+}
+.contact-form .field-select{
     width: 100%;
 }
-.form-style-1 .field-select{
-    width: 100%;
-}
-.form-style-1 .field-textarea{
+.contact-form .field-textarea{
     height: 100px;
 }
-.form-style-1 input[type=submit], .form-style-1 input[type=button]{
+.contact-form input[type=submit], .contact-form input[type=button]{
     background: #4B99AD;
     padding: 8px 15px 8px 15px;
     border: none;
     color: #fff;
 }
-.form-style-1 input[type=submit]:hover, .form-style-1 input[type=button]:hover{
+.contact-form input[type=submit]:hover, .contact-form input[type=button]:hover{
     background: #4691A4;
     box-shadow:none;
     -moz-box-shadow:none;
     -webkit-box-shadow:none;
 }
-.form-style-1 .required{
+.contact-form .required{
     color:red;
 }
-</style>
+
+.contact-form .gender-fieldset ul{
+    margin: 0;
+    padding: 0;
+}

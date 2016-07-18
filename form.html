@@ -9,9 +9,9 @@
 
 <body>
 
-    <form class="contact-form" action="" method="post" name="contact-form">
+    <form class="contact-form" name="contact-form">
         <h1>Contact Me</h1>
-        <p>Required fields are followed by <strong><abbr title="required">*</abbr></strong>.</p>
+        <p>Required fields are followed by <strong><abbr class="required" title="required">*</abbr></strong>.</p>
 
         <section>
             <h2>Contact information</h2>
@@ -19,7 +19,7 @@
             <p>
                 <label for="entity">
                     <span>Entity:</span>
-                    <select id="entity" name="entity">
+                    <select class="field-select" name="entity" id="entity">
                         <option value="Company">Company</option>
                         <option value="Person">Person</option>
                         <option value="Superhero">Batman</option>
@@ -46,32 +46,32 @@
             <p>
                 <label for="name">
                     <span>Name:</span>
-                    <input type="text" id="name" name="name" maxlength="20" placeholder="Your Name" required />
-                    <strong><abbr title="required">*</abbr></strong>
+                    <input type="text" id="name" name="name" maxlength="20" placeholder="Your Name" required class="field-long"/>
+                    <strong><abbr class="required" title="required">*</abbr></strong>
                 </label>
             </p>
 
             <p>
                 <label for="surname">
                     <span>Surname: </span>
-                    <input type="text" id="surname" name="surname" maxlength="20" placeholder="Family Name" required />
-                    <strong><abbr title="required">*</abbr></strong>
+                    <input type="text" id="surname" name="surname" maxlength="20" placeholder="Family Name" required class="field-long" />
+                    <strong><abbr class="required" title="required">*</abbr></strong>
                 </label>
             </p>
 
             <p>
                 <label for="telno">
-                    <span>Tel:</span>
-                    <input type="tel" id="telno" name="telno" maxlength="15" placeholder="e.g. +40745121212" required />
-                    <strong><abbr title="required">*</abbr></strong>
+                    <span>Telefone:</span>
+                    <input type="text" id="telno" name="telno" maxlength="15" placeholder="e.g. +40745121212" required class="field-long"/>
+                    <strong><abbr class="required" title="required">*</abbr></strong>
                 </label>
             </p>
 
             <p>
                 <label for="mail">
                     <span>E-mail: </span>
-                    <input type="email" id="mail" name="usermail" maxlength="25" placeholder="ghita@inteligentu.com" required />
-                    <strong><abbr title="required">*</abbr></strong>
+                    <input type="email" id="mail" name="usermail" maxlength="25" placeholder="ghita@inteligentu.com" required class="field-long"/>
+                    <strong><abbr class="required" title="required">*</abbr></strong>
                 </label>
             </p>
         </section>
@@ -81,14 +81,14 @@
 
         <fieldset>
             <legend>Message</legend>
-            <textarea name="textarea" maxlength="500" rows="10" cols="70" id="message" placeholder="Mama are mere"></textarea>
+            <textarea name="textarea" maxlength="500" rows="10" cols="70" id="message" placeholder="Mama are mere" class="field-long field-textarea"></textarea>
         </fieldset>
 
 
 
         <section>
             <p>
-                <button>Submit</button>
+                <input type="submit" value="Submit" />
             </p>
         </section>
     </form>
