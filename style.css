@@ -339,8 +339,26 @@
     display: none;
 }
 
-.svg-bullets {
+.svg-bullets-float {
+    height: 20px;
+    width: 100px;
     float: right;
+}
+
+.svg-circle circle {
+    cy: 10px;
+    r: 8px;
+    stroke-width=2px;
+    fill: rgb(255, 255, 255);
+    stroke: rgb(219, 70, 30);
+}
+
+.svg-skill-lvl1 circle:nth-of-type(-n+1),
+.svg-skill-lvl2 circle:nth-of-type(-n+2),
+.svg-skill-lvl3 circle:nth-of-type(-n+3),
+.svg-skill-lvl4 circle:nth-of-type(-n+4),
+.svg-skill-lvl5 circle:nth-of-type(-n+5){
+    fill: rgb(219, 70, 30);
 }
 
 .testimonials-header {
@@ -357,7 +375,7 @@
     background-color: #FFF;
     color: #AFBABD;
     -moz-border-radius: 6px;
-    -webkit-border-radius:6px;
+    -webkit-border-radius: 6px;
     border-radius: 6px;
     padding: 20px;
     margin: 0 20px;
@@ -462,11 +480,11 @@
     font-size: 10px;
 }
 
-.form{
+.form {
     margin-bottom: 4%;
 }
 
-.form a:hover{
+.form a:hover {
     text-decoration: none;
 }
 
