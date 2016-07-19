@@ -166,7 +166,7 @@
 }
 
 .home-arrows-text {
-    font-size: 110%;
+    font-size: 130%;
 }
 
 .home-arrows-icon {
@@ -178,7 +178,7 @@
 
 .home-arrows-icon a {
     color: white;
-    font-size: 30px;
+    font-size: 40px;
     text-decoration: none;
 }
 
@@ -186,6 +186,23 @@
     color: whitesmoke;
     text-decoration: none;
     padding-right: 5px;
+}
+
+
+.home-arrows-icon a{
+    -webkit-animation: arrows 1s infinite;
+}
+
+@keyframes arrows {
+  from {
+    margin-left: 10%;
+    
+  }
+
+  to {
+    margin-left: 0%;
+   
+  }
 }
 
 
