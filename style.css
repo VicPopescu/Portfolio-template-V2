@@ -142,7 +142,7 @@
     height: 100vh;
     width: 98.792vw;
     color: white;
-    background: #000 url(https://static.pexels.com/photos/1780/landscape-nature-clouds-cloudy.jpg) center center/cover no-repeat;
+    background: #000 url(Img/landscape-nature-clouds-cloudy.jpg) center center/cover no-repeat;
 }
 
 .home-img {
@@ -188,21 +188,17 @@
     padding-right: 5px;
 }
 
-
-.home-arrows-icon a{
+.home-arrows-icon a {
     -webkit-animation: arrows 1s infinite;
 }
 
 @keyframes arrows {
-  from {
-    margin-left: 10%;
-    
-  }
-
-  to {
-    margin-left: 0%;
-   
-  }
+    from {
+        margin-left: 10%;
+    }
+    to {
+        margin-left: 0%;
+    }
 }
 
 
@@ -374,7 +370,7 @@
 .svg-skill-lvl2 circle:nth-of-type(-n+2),
 .svg-skill-lvl3 circle:nth-of-type(-n+3),
 .svg-skill-lvl4 circle:nth-of-type(-n+4),
-.svg-skill-lvl5 circle:nth-of-type(-n+5){
+.svg-skill-lvl5 circle:nth-of-type(-n+5) {
     fill: rgb(219, 70, 30);
 }
 
@@ -505,36 +501,32 @@
     text-decoration: none;
 }
 
-.form ul{
+.form ul {
     list-style: none;
     margin: 0;
     padding: 0;
-    
 }
 
-
-.social-icons{
+.social-icons {
     width: 70%;
     margin: 0 auto;
     border-bottom: 2px solid lightgray;
 }
 
-.social-icons ul{
+.social-icons ul {
     list-style: none;
     padding: 0;
     margin: 0;
 }
 
-.social-icons ul li{
+.social-icons ul li {
     list-style-type: none;
     display: inline-block;
-    
 }
 
 .social-icons ul li a img {
-   display: inline-block;
-   border-radius: 50%;
-     
+    display: inline-block;
+    border-radius: 50%;
 }
 
 
