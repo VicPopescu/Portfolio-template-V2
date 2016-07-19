@@ -1,6 +1,16 @@
 body{
     background-color: rgb(45, 62, 80);
-    color: white;
+    color: #ff3300;
+}
+
+label option{
+    background: #4691A4;
+}
+
+fieldset{
+    border: 0;
+    padding: 0 auto;
+    margin: 0 auto;
 }
 
 .contact-form {
@@ -24,7 +34,6 @@ body{
 .contact-form input[type=text], 
 .contact-form input[type=date],
 .contact-form input[type=datetime],
-.contact-form input[type=number],
 .contact-form input[type=search],
 .contact-form input[type=time],
 .contact-form input[type=url],
@@ -70,13 +79,13 @@ select{
     height: 100px;
 }
 .contact-form input[type=submit], .contact-form input[type=button]{
-    background: #4B99AD;
+    background: rgb(204, 41, 0);
     padding: 8px 15px 8px 15px;
     border: none;
     color: #fff;
 }
 .contact-form input[type=submit]:hover, .contact-form input[type=button]:hover{
-    background: #4691A4;
+    background: rgb(219, 70, 30);
     box-shadow:none;
     -moz-box-shadow:none;
     -webkit-box-shadow:none;
