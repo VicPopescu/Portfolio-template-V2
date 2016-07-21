@@ -304,8 +304,9 @@ body {
     order: 1;
 }
 
-.skills-description {
-    order: 2;
+.skills-description,
+.testimonials {
+    width: 80%;
     display: -webkit-box;
     display: -webkit-flex;
     display: -moz-box;
@@ -314,8 +315,12 @@ body {
     -webkit-flex-align: center;
     -ms-flex-align: center;
     -webkit-align-items: center;
-    align-items: center;
     justify-content: center;
+    align-items: center;
+}
+
+.skills-description {
+    order: 2;
     flex-direction: row;
 }
 
@@ -386,7 +391,6 @@ body {
 
 .testimonials {
     order: 4;
-    display: flex;
     text-align: center;
 }
 
@@ -396,9 +400,9 @@ body {
     -moz-border-radius: 6px;
     -webkit-border-radius: 6px;
     border-radius: 6px;
-    padding: 20px;
+    padding: 25px;
     margin: 0 20px;
-    width: 300px;
+    width: 250px;
     font-style: italic;
     font-size: 13px;
 }
@@ -438,7 +442,7 @@ body {
     justify-content: center;
     flex-direction: column;
     overflow: hidden;
-    height: 100vh;
+    height: auto;
     width: 98.792vw;
     text-align: center;
     background-color: #E3E4E9;
@@ -453,13 +457,6 @@ body {
 .experience ul li {
     display: inline-block;
 }
-
-
-/* $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
-*/
-
-
-/* to rename these in css and html */
 
 .work-container,
 .exp-container {
@@ -486,7 +483,7 @@ body {
 
 .svg-size-pos {
     position: absolute;
-    z-index: 1;
+    z-index: 0;
     width: 70%;
     bottom: 50%;
     left: 15%;
@@ -507,7 +504,7 @@ body {
     width: 140px;
     height: 170px;
     border-radius: 25px;
-    background: #E3E4E9;
+    background: transparent;
     text-align: center;
     padding-top: 10px;
     border: 2px solid transparent;
@@ -571,6 +568,13 @@ body {
 .right-circle {
     bottom: 48.5%;
     left: 84.5%;
+}
+
+.text-container {
+    width: 50%;
+    height: 200px;
+    margin: 0 auto;
+    background-color: white;
 }
 
 
