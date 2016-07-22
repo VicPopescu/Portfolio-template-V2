@@ -196,6 +196,8 @@ body {
 
 .home-arrows-icon a {
     -webkit-animation: arrows 1s infinite;
+    -ms-animation: arrows 1s infinite;
+    animation: arrows 1s infinite;
 }
 
 @keyframes arrows {
@@ -306,7 +308,7 @@ body {
 
 .skills-description,
 .testimonials {
-    width: 80%;
+    width: 70%;
     display: -webkit-box;
     display: -webkit-flex;
     display: -moz-box;
@@ -328,7 +330,7 @@ body {
 .skill2,
 .skill3 {
     padding: 25px;
-    margin: 0 20px;
+    margin: 0 10px;
     width: 300px;
     font-size: 20px;
 }
@@ -401,7 +403,7 @@ body {
     -webkit-border-radius: 6px;
     border-radius: 6px;
     padding: 25px;
-    margin: 0 20px;
+    margin: 0 10px;
     width: 250px;
     font-style: italic;
     font-size: 13px;
