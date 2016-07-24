@@ -519,6 +519,7 @@ body {
 
 .content-container:hover {
     border: 2px solid rgb(219, 150, 30);
+    cursor: pointer;
 }
 
 .second-container {
@@ -568,10 +569,28 @@ body {
 }
 
 .experience-description-container {
-    width: 50%;
-    height: 200px;
+    width: 30%;
+    height: auto;
     margin: 0 auto;
-    background-color: white;
+    text-align: center;
+    padding: 30px 30px;
+}
+
+.SSC-2009-descript,
+.HSC-2011-descript,
+.Present-descript,
+.Adobe-descript,
+.Microsoft-descript,
+.Endava-descript {
+    display: none;
+}
+
+.experience-description-container .exp-title {
+    font-weight: bold;
+}
+
+.experience-description-container .exp-details {
+    font-size: 80%;
 }
 
 
