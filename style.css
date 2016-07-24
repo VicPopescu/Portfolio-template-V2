@@ -20,6 +20,13 @@ body {
     letter-spacing: 2px;
 }
 
+.sub-title {
+    /* h2 subtitles */
+    color: black;
+    font-size: 20px;
+    font-weight: 900;
+}
+
 
 /* ========== /GENERAL ==========*/
 
@@ -237,7 +244,7 @@ body {
 .achievements {
     order: 1;
     height: 60%;
-    width: 24%;
+    width: 26%;
     margin: auto 5%;
 }
 
@@ -355,14 +362,19 @@ body {
 
 .skills ul {
     list-style: none;
-    text-align: left;
     margin: 0;
     padding: 0;
+    width: 300px;
 }
 
+.skills ul li {
+    width: 300px;
+}
+
+.skill-name {}
+
 .skill-level {
-    float: right;
-    display: none;
+    visibility: hidden;
 }
 
 .svg-bullets-float {
@@ -371,12 +383,9 @@ body {
     float: right;
 }
 
-.svg-circle circle {
-    cy: 10px;
-    r: 6px;
-    stroke-width: 2px;
-    fill: rgb(255, 255, 255);
-    stroke: rgb(219, 70, 30);
+.svg-circle {
+    height: 100%;
+    width: 100%;
 }
 
 .svg-skill-lvl1 circle:nth-of-type(-n+1),
@@ -404,7 +413,7 @@ body {
     border-radius: 6px;
     padding: 25px;
     margin: 0 10px;
-    width: 250px;
+    width: 280px;
     font-style: italic;
     font-size: 13px;
 }
@@ -416,13 +425,6 @@ body {
     height: 0;
     width: 0;
     margin-left: 90px;
-}
-
-.sub-title {
-    /* h2 subtitles */
-    color: black;
-    font-size: 20px;
-    font-weight: 900;
 }
 
 
