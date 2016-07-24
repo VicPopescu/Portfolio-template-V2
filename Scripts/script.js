@@ -1,3 +1,23 @@
+/* EXPERIENCE section hovering effects */
+
+var expContent = $('.content-container');
+
+
+$(expContent).hover(function () {
+    $(this).find('circle').css({
+        fill: "rgb(219, 150, 30)"
+    })
+}, function () {
+    $(this).find('circle').css({
+        fill: "white"
+    })
+
+}).click(function () {
+    //to be added on click event
+
+});
+
+
 /*
 var waypoint1 = new Waypoint({
     element: document.getElementById('homeID'),
