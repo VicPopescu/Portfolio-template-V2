@@ -55,12 +55,12 @@ $(expContent).hover(function () {
 //    }
 //})
 
-var aboutScroll = $('#aboutID');
-var portfolioScroll = $('#portfolioID');
-var skillsScroll = $('#skillsID');
-var topMenuItem = $(".top-nav ul li a");
-var topMenuBottomLine = $(".nav-hr");
-var sideNavText = $('.left-side-nav-text');
+var aboutScroll = $('#aboutID'); // "About" section
+var portfolioScroll = $('#portfolioID'); // "Portfolio" section
+var skillsScroll = $('#skillsID'); // "Skills" section
+var topMenuItem = $(".top-nav ul li a"); //Top menu links
+var topMenuBottomLine = $(".nav-hr"); //Top menu hr
+var sideNavText = $('.left-side-nav-text'); //Left side menu
 
 $(aboutScroll).waypoint(function (direction) {
     if (direction === 'down') {
@@ -90,4 +90,27 @@ $(skillsScroll).waypoint(function (direction) {
         $(topMenuItem).css("color", "#FFFFFF");
         $(topMenuBottomLine).css("border-color", "#FFFFFF");
     }
+}, {
+    offset: '5%' //fix waypoint position
 });
+
+
+/* END Waypoints*/
+
+/* Smooth Scrolling Animation when clicking top menu links*/
+
+$(topMenuItem).click(function () {
+    if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') || location.hostname == this.hostname) {
+
+        var target = $(this.hash);
+        target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+        if (target.length) {
+            $('html,body').animate({
+                scrollTop: target.offset().top
+            }, 500);
+            return false;
+        }
+    }
+});
+
+/* END Smooth Scrolling Animation */
