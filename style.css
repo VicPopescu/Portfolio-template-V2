@@ -364,16 +364,17 @@ body {
     list-style: none;
     margin: 0;
     padding: 0;
-    width: 300px;
+    width: 100%;
 }
 
 .skills ul li {
-    width: 300px;
+    width: 100%;
 }
 
 .skill-name {}
 
 .skill-level {
+    font-size: 1px;
     visibility: hidden;
 }
 
@@ -493,14 +494,9 @@ body {
     left: 15%;
 }
 
-.svg {
+.svg-line {
     height: 5px;
     width: 100%;
-}
-
-.svg line {
-    stroke: #2C3F50;
-    stroke-width: 10px;
 }
 
 .content-container {
@@ -547,21 +543,8 @@ body {
     width: 20px;
 }
 
-.work-svg-circle circle {
-    cy: 10px;
-    r: 8px;
-    stroke-width: 3px;
-    fill: white;
-    stroke: #2C3F50;
-}
-
 .side-circle {
     position: absolute;
-}
-
-.side-circle circle {
-    fill: #2C3F50;
-    stroke-width: 1px;
 }
 
 .left-circle {
