@@ -1,7 +1,248 @@
+/* Document waypoints */
+/* Change menu text color to blend with background */
+
+//Waypoints:
+var homeWaypoint = $('#homeID'); // "Home" section
+var aboutWaypoint = $('#aboutID'); // "About" section
+var portfolioWaypoint = $('#portfolioID'); // "Portfolio" section 
+var skillsWaypoint = $('#skillsID'); // "Skills" section
+var expWaypoint = $('#experienceID'); // "Experience" section
+var contactWaypoint = $('#contactID'); // "Contact" section
+//Top Menu items:
+var topMenuLinks = $(".top-nav ul li a"); // Top menu links
+var topMenuLi = $(".top-nav ul li");
+var topMenuBottomLine = $(".nav-hr"); // Top menu hr
+
+/*Left Nav items*/
+//Left side menu bullets:
+var leftNavHomeDot = $("#home-circle");
+var leftNavAboutDot = $("#about-circle");
+var leftNavPortfolioDot = $("#portfolio-circle");
+var leftNavSkillsDot = $("#skills-circle");
+var leftNavExpDot = $("#exp-circle");
+var leftNavContactDot = $("#contact-circle");
+//Left side menu text:
+var leftNavHomeText = $("#home-text");
+var leftNavAboutText = $("#about-text");
+var leftNavPortfolioText = $("#portfolio-text");
+var leftNavSkillsText = $("#skills-text");
+var leftNavExpText = $("#exp-text");
+var leftNavContactText = $("#contact-text");
+
+
+
+
+
+$(homeWaypoint)
+    .waypoint(function (direction) {
+        if (direction === 'down') {
+            $(leftNavHomeDot).attr('r', '4');
+            //        $("#home-circle").css('r', '4');
+            $(leftNavHomeText).attr({
+                x: '-300'
+            });
+
+        } else {
+            //        $("#home-circle").css('r', '6');
+            $(leftNavHomeDot).attr('r', '6');
+            $(leftNavHomeText).attr({
+                x: '30',
+                fill: "white"
+            });
+        }
+    }, {
+        offset: '-50%'
+    });
+
+$(aboutWaypoint)
+    .waypoint(function (direction) {
+        if (direction === 'down') {
+            //top menu
+            $(topMenuLinks).css("color", "black");
+            $(topMenuBottomLine).css("border-color", "black");
+            $(topMenuLi).hover(function () {
+                $(this).css("background-color", "rgba(0, 0, 0, 0.1")
+            }, function () {
+                $(this).css("background-color", "inherit");
+            });
+            //        $("#about-circle").css('r', '6');
+            //left menu
+            $(leftNavAboutDot).attr('r', '6');
+            $(leftNavAboutText).attr({
+                x: '30',
+                fill: 'black'
+            });
+        } else {
+            $(topMenuLinks).css("color", "#FFFFFF");
+            $(topMenuBottomLine).css("border-color", "#FFFFFF");
+            //        $("#about-circle").css('r', '4');
+            $(leftNavAboutDot).attr('r', '4');
+            $(leftNavAboutText).attr({
+                x: '-300'
+            });
+            $(topMenuLi).hover(function () {
+                $(this).css("background-color", "inherit")
+            });
+        }
+    });
+
+$(portfolioWaypoint)
+    .waypoint(function (direction) {
+        if (direction === 'down') {
+            $(topMenuLinks).css("color", "#FFFFFF");
+            $(topMenuBottomLine).css("border-color", "#FFFFFF");
+            //            $("#portfolio-circle").css('r', '6');
+            //            $("#about-circle").css('r', '4');
+            $(leftNavPortfolioDot).attr('r', '6');
+            $(leftNavAboutDot).attr('r', '4');
+            $(leftNavPortfolioText).attr({
+                x: '30',
+                fill: 'white'
+            });
+            $(leftNavAboutText).attr({
+                x: '-300'
+            });
+            $(topMenuLi).hover(function () {
+                $(this).css("background-color", "inherit")
+            });
+        } else {
+            $(topMenuLinks).css("color", "black");
+            $(topMenuBottomLine).css("border-color", "black");
+            //            $("#portfolio-circle").css('r', '4');
+            //            $("#about-circle").css('r', '6');
+            $(leftNavPortfolioDot).attr('r', '4');
+            $(leftNavAboutDot).attr('r', '6');
+            $(leftNavPortfolioText).attr({
+                x: '-300'
+            });
+            $(leftNavAboutText).attr({
+                x: '30',
+                fill: 'black'
+            });
+            $(topMenuLi).hover(function () {
+                $(this).css('background-color', 'rgba(0, 0, 0, 0.2')
+            }, function () {
+                $(this).css('background-color', 'inherit');
+            });
+        }
+    });
+
+$(skillsWaypoint)
+    .waypoint(function (direction) {
+        if (direction === 'down') {
+            $(topMenuLinks).css('color', 'black');
+            $(topMenuBottomLine).css('border-color', 'black');
+            //            $("#skills-circle").css('r', '6');
+            //            $("#portfolio-circle").css('r', '4');
+            $(leftNavSkillsDot).attr('r', '6');
+            $(leftNavPortfolioDot).attr('r', '4');
+            $(leftNavSkillsText).attr({
+                x: '30',
+                fill: 'black'
+            });
+            $(leftNavPortfolioText).attr({
+                x: '-300'
+            });
+            $(topMenuLi).hover(function () {
+                $(this).css({
+                    'background-color': 'rgba(0, 0, 0, 0.2'
+                })
+            }, function () {
+                $(this).css({
+                    'background-color': "inherit"
+                })
+            });
+        } else {
+            $(topMenuLinks).css("color", "#FFFFFF");
+            $(topMenuBottomLine).css("border-color", "#FFFFFF");
+            //            $("#skills-circle").css('r', '4');
+            //            $("#portfolio-circle").css('r', '6');
+            $(leftNavSkillsDot).attr('r', '4');
+            $(leftNavPortfolioDot).attr('r', '6');
+            $(leftNavSkillsText).attr({
+                x: '-300'
+            });
+            $(leftNavPortfolioText).attr({
+                x: '30',
+                fill: 'white'
+            });
+            $(topMenuLi).hover(function () {
+                $(this).css("background-color", "inherit")
+            });
+        }
+    }, {
+        offset: '5%' //fix waypoint position
+    });
+
+$(expWaypoint)
+    .waypoint(function (direction) {
+        if (direction === 'down') {
+            //            $("#skills-circle").css('r', '4');
+            //            $("#exp-circle").css('r', '6');
+            $(leftNavSkillsDot).attr('r', '4');
+            $(leftNavExpDot).attr('r', '6');
+            $(leftNavSkillsText).attr({
+                x: '-300'
+            });
+            $(leftNavExpText).attr({
+                x: '30',
+                fill: 'black'
+            });
+        } else {
+            //            $("#exp-circle").css('r', '4');
+            //            $("#skills-circle").css('r', '6');
+            $(leftNavExpDot).attr('r', '4');
+            $(leftNavSkillsDot).attr('r', '6');
+            $(leftNavExpText).attr({
+                x: '-300'
+            });
+            $(leftNavSkillsText).attr({
+                x: '30',
+                fill: 'black'
+            });
+        }
+    }, {
+        offset: '20%' //fix waypoint position
+    });
+
+$(contactWaypoint)
+    .waypoint(function (direction) {
+        if (direction === 'down') {
+            //            $("#contact-circle").css('r', '6');
+            //            $("#exp-circle").css('r', '4');
+            $(leftNavContactDot).attr('r', '6');
+            $(leftNavExpDot).attr('r', '4');
+            $(leftNavContactText).attr({
+                x: '30',
+                fill: 'black'
+            });
+            $(leftNavExpText).attr({
+                x: '-300'
+            });
+        } else {
+            //            $("#contact-circle").css('r', '4');
+            //            $("#exp-circle").css('r', '6');
+            $(leftNavContactDot).attr('r', '4');
+            $(leftNavExpDot).attr('r', '6');
+            $(leftNavContactText).attr({
+                x: '-300'
+            });
+            $(leftNavExpText).attr({
+                x: '30',
+                fill: 'black'
+            });
+        }
+    }, {
+        offset: '30%' //fix waypoint position
+    });
+
+/* END Waypoints*/
+
+
 /* EXPERIENCE section hovering effects */
 /* Fill experience section circles with orange color when hovering */
 
-var expContent = $('.content-container');
+var expContent = $('.content-container'); //list elements
 
 
 $(expContent).hover(function () {
@@ -20,6 +261,8 @@ $(expContent).hover(function () {
 /* END */
 
 /* EXPERIENCE onclick() events*/
+
+/* !!!TO CACHE WAYPOINTS SO DONT HAVE TO REPEAT THEM */
 
 
 var toBeReplaced = $('.experience-description-container div');
@@ -51,56 +294,10 @@ $('#Endava').click(function () {
 
 /* END */
 
-/* Document waypoints */
-/* Change menu text color to blend with background */
-
-var aboutScroll = $('#aboutID'); // "About" section
-var portfolioScroll = $('#portfolioID'); // "Portfolio" section
-var skillsScroll = $('#skillsID'); // "Skills" section
-var topMenuItem = $(".top-nav ul li a"); //Top menu links
-var topMenuBottomLine = $(".nav-hr"); //Top menu hr
-var sideNavText = $('.left-side-nav-text'); //Left side menu
-
-$(aboutScroll).waypoint(function (direction) {
-    if (direction === 'down') {
-        $(topMenuItem).css("color", "black");
-        $(topMenuBottomLine).css("border-color", "black");
-    } else {
-        $(topMenuItem).css("color", "#FFFFFF");
-        $(topMenuBottomLine).css("border-color", "#FFFFFF");
-    }
-});
-
-$(portfolioScroll)
-    .waypoint(function (direction) {
-        if (direction === 'down') {
-            $(topMenuItem).css("color", "#FFFFFF");
-            $(topMenuBottomLine).css("border-color", "#FFFFFF");
-        } else {
-            $(topMenuItem).css("color", "black");
-            $(topMenuBottomLine).css("border-color", "black");
-        }
-    });
-
-$(skillsScroll)
-    .waypoint(function (direction) {
-        if (direction === 'down') {
-            $(topMenuItem).css("color", "black");
-            $(topMenuBottomLine).css("border-color", "black");
-        } else {
-            $(topMenuItem).css("color", "#FFFFFF");
-            $(topMenuBottomLine).css("border-color", "#FFFFFF");
-        }
-    }, {
-        offset: '5%' //fix waypoint position
-    });
-
-
-/* END Waypoints*/
 
 /* Smooth Scrolling Animation when clicking top menu links*/
 
-$(topMenuItem)
+$(topMenuLinks)
     .click(function () {
         if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') || location.hostname == this.hostname) {
 
@@ -109,7 +306,7 @@ $(topMenuItem)
             if (target.length) {
                 $('html,body').animate({
                     scrollTop: target.offset().top
-                }, 400);
+                }, 300);
                 return false;
             }
         }

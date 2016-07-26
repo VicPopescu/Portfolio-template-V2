@@ -10,33 +10,70 @@
 
 <body>
 
-    <nav class="top-nav">
+    <nav class="top-nav" role=navigation>
         <ul class="top-nav-ul">
-            <li><a href="#homeID">HOME</a></li>
-            <li><a href="#aboutID">ABOUT</a></li>
-            <li><a href="#portfolioID">PORTFOLIO</a></li>
-            <li><a href="#skillsID">SKILLS</a></li>
-            <li><a href="#experienceID">EXPERIENCE</a></li>
-            <li><a href="#contactID">CONTACT</a></li>
+            <li class="top-nav-li"><a href="#homeID">HOME</a></li>
+            <li class="top-nav-li"><a href="#aboutID">ABOUT</a></li>
+            <li class="top-nav-li"><a href="#portfolioID">PORTFOLIO</a></li>
+            <li class="top-nav-li"><a href="#skillsID">SKILLS</a></li>
+            <li class="top-nav-li"><a href="#experienceID">EXPERIENCE</a></li>
+            <li class="top-nav-li"><a href="#contactID">CONTACT</a></li>
         </ul>
         <hr class="nav-hr">
     </nav>
 
-    <nav class="left-side-nav">
+    <nav class="left-side-nav" role="navigation">
         <div class="dot-nav">
-            <ul>
-                <li><a href="#homeID"><span class="left-side-nav-text">HOME</span></a></li>
-                <li><a href="#aboutID">ABOUT</a></li>
-                <li><a href="#portfolioID">PORTFOLIO</a></li>
-                <li><a href="#skillsID">SKILLS</a></li>
-                <li><a href="#experienceID">EXPERIENCE</a></li>
-                <li><a href="#contactID">CONTACT</a></li>
-            </ul>
+            <span>
+                <svg>
+                    <circle id="home-circle" cx="10px" cy="10px" r="4px" stroke-width="2px" fill="rgb(255, 255, 255)" stroke="rgb(219, 70, 30)" />
+                    <text id="home-text" fill="white" y="16px" x="-300">Home 
+                    </text>
+                </svg>
+            </span>
+            <span>
+                <svg>
+                    <circle id="about-circle" cx="10px" cy="30px" r="4px" stroke-width="2px" fill="rgb(255, 255, 255)" stroke="rgb(219, 70, 30)" />
+                    <text id="about-text" fill="white" y="36px" x="-300">About
+                    </text>
+            </svg>
+            </span>
+            <span>
+                <svg>
+                    <circle id="portfolio-circle" cx="10px" cy="50px" r="4px" stroke-width="2px" fill="rgb(255, 255, 255)" stroke="rgb(219, 70, 30)" />
+                    <text id="portfolio-text" fill="white" y="56px" x="-300">Portfolio
+                    </text>
+            </svg>
+            </span>
+            <span>
+                <svg>
+                    <circle id="skills-circle" cx="10px" cy="70px" r="4px" stroke-width="2px" fill="rgb(255, 255, 255)" stroke="rgb(219, 70, 30)" />
+                    <text id="skills-text" fill="white" y="76px" x="-300">Skills
+                    </text>
+            </svg>
+            </span>
+            <span>
+                <svg>
+                    <circle id="exp-circle" cx="10px" cy="90px" r="4px" stroke-width="2px" fill="rgb(255, 255, 255)" stroke="rgb(219, 70, 30)" />
+                    <text id="exp-text" fill="white" y="96px" x="-300">Experience
+                    </text>
+            </svg>
+            </span>
+            <span>
+                <svg>
+                    <circle id="contact-circle" cx="10px" cy="110px" r="4px" stroke-width="2px" fill="rgb(255, 255, 255)" stroke="rgb(219, 70, 30)" />
+                    <text id="contact-text" fill="white" y="116px" x="-300">Contact
+                    </text>
+            </svg>
+            </span>
+
         </div>
     </nav>
 
-    <header id="homeID" class="home">
-        <img class="home-img" alt="placeholder" src="https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTz-9DyxIvSBQWgaCF-kxnckbiPRrC758f-aigoKb8YmK0DIdmE">
+
+
+    <header id="homeID" class="home" role="banner">
+        <img class="home-img" alt="placeholder" src="Img/header-pingu.jpg">
         <h1 class="home-name"><b>JOHN</b> DOE</h1>
         <footer class="home-footer">
             <p class="home-arrows-text">SCROLL DOWN TO SEE MORE</p>
@@ -498,7 +535,7 @@
 
     </section>
 
-    <footer id="contactID" class="contact">
+    <footer id="contactID" class="contact" role="contentinfo">
         <adress>
             <h1 class="page-title">CONTACT</h1>
             <div class="form">
