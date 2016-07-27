@@ -101,12 +101,12 @@ $(portfolioWaypoint)
     .waypoint(function (direction) {
         if (direction === 'down') {
             /* top menu */
-            $(topMenuLinks).css("color", "black");
+            $(topMenuLinks).css("color", "white");
             //            $(topMenuBottomLine).css("border-color", "#FFFFFF");
             $(topMenuLi).hover(function () {
                 $(this).css("background-color", "inherit")
             });
-            $('.top-nav').css('background-color', 'rgba(255, 255, 255, 0.6)');
+            $('.top-nav').css('background-color', 'rgba(0, 0, 0, 0.5)');
             /* left menu */
             //            $("#portfolio-circle").css('r', '6');
             //            $("#about-circle").css('r', '4');
@@ -174,12 +174,12 @@ $(skillsWaypoint)
             });
         } else {
             /* top menu */
-            $(topMenuLinks).css("color", "black");
+            $(topMenuLinks).css("color", "white");
             //            $(topMenuBottomLine).css("border-color", "#FFFFFF");
             $(topMenuLi).hover(function () {
                 $(this).css("background-color", "inherit")
             });
-            $('.top-nav').css('background-color', 'rgba(255, 255, 255, 0.6)');
+            $('.top-nav').css('background-color', 'rgba(0, 0, 0, 0.5)');
             /* left menu */
             //            $("#skills-circle").css('r', '4');
             //            $("#portfolio-circle").css('r', '6');

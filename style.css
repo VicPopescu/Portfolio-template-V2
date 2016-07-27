@@ -328,7 +328,32 @@ body {
 
 .portfolio ul li {
     display: inline-block;
-    margin-bottom: 4px;
+    margin: 1%;
+}
+
+.portf-item-container {
+    position: relative;
+    min-width: 200px;
+    min-height: 200px;
+    border-radius: 2%;
+    overflow: hidden;
+}
+
+.portf-item-title {
+    position: absolute;
+    bottom: 2%;
+    left: 0;
+    width: 100%;
+    height: 15%;
+    padding-top: 5%;
+}
+
+.small-item-title {
+    background-color: rgba(102, 102, 153, 0.4);
+}
+
+.big-item-title {
+    background-color: rgba(153, 153, 102, 0.4);
 }
 
 
