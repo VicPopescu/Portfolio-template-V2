@@ -36,6 +36,7 @@ var leftNavContactText = $("#contact-text");
 $(homeWaypoint)
     .waypoint(function (direction) {
         if (direction === 'down') {
+            /* left menu */
             $(leftNavHomeDot).attr('r', '4');
             //        $("#home-circle").css('r', '4');
             $(leftNavHomeText).attr({
@@ -43,6 +44,7 @@ $(homeWaypoint)
             });
 
         } else {
+            /* left menu */
             //        $("#home-circle").css('r', '6');
             $(leftNavHomeDot).attr('r', '6');
             $(leftNavHomeText).attr({
@@ -57,24 +59,33 @@ $(homeWaypoint)
 $(aboutWaypoint)
     .waypoint(function (direction) {
         if (direction === 'down') {
-            //top menu
-            $(topMenuLinks).css("color", "black");
-            $(topMenuBottomLine).css("border-color", "black");
+            /* top menu */
+            $(topMenuLinks).css("color", "white");
+            //            $(topMenuBottomLine).css("border-color", "black");
             $(topMenuLi).hover(function () {
-                $(this).css("background-color", "rgba(0, 0, 0, 0.1")
+                $(this).css({
+                    //                    'background-color': 'rgba(255, 255, 255, 0.5)',
+                    //                    'transition': '350ms ease-in-out'
+                })
             }, function () {
-                $(this).css("background-color", "inherit");
+                $(this).css('background-color', 'inherit');
             });
+            $('.top-nav').css('background-color', 'rgba(0, 0, 0, 0.5)')
+            $('.nav-hr').hide('500');
+            /* left menu */
             //        $("#about-circle").css('r', '6');
-            //left menu
             $(leftNavAboutDot).attr('r', '6');
             $(leftNavAboutText).attr({
                 x: '30',
                 fill: 'black'
             });
         } else {
+            /* top menu */
             $(topMenuLinks).css("color", "#FFFFFF");
             $(topMenuBottomLine).css("border-color", "#FFFFFF");
+            $('.top-nav').css('background-color', 'inherit');
+            $('.nav-hr').show('500');
+            /* left menu */
             //        $("#about-circle").css('r', '4');
             $(leftNavAboutDot).attr('r', '4');
             $(leftNavAboutText).attr({
@@ -89,8 +100,14 @@ $(aboutWaypoint)
 $(portfolioWaypoint)
     .waypoint(function (direction) {
         if (direction === 'down') {
-            $(topMenuLinks).css("color", "#FFFFFF");
-            $(topMenuBottomLine).css("border-color", "#FFFFFF");
+            /* top menu */
+            $(topMenuLinks).css("color", "black");
+            //            $(topMenuBottomLine).css("border-color", "#FFFFFF");
+            $(topMenuLi).hover(function () {
+                $(this).css("background-color", "inherit")
+            });
+            $('.top-nav').css('background-color', 'rgba(255, 255, 255, 0.6)');
+            /* left menu */
             //            $("#portfolio-circle").css('r', '6');
             //            $("#about-circle").css('r', '4');
             $(leftNavPortfolioDot).attr('r', '6');
@@ -102,14 +119,19 @@ $(portfolioWaypoint)
             $(leftNavAboutText).attr({
                 x: '-300'
             });
-            $(topMenuLi).hover(function () {
-                $(this).css("background-color", "inherit")
-            });
         } else {
-            $(topMenuLinks).css("color", "black");
-            $(topMenuBottomLine).css("border-color", "black");
-            //            $("#portfolio-circle").css('r', '4');
-            //            $("#about-circle").css('r', '6');
+            /* top menu */
+            $(topMenuLinks).css("color", "white");
+            //            $(topMenuBottomLine).css("border-color", "black");
+            $(topMenuLi).hover(function () {
+                $(this).css('background-color', 'rgba(0, 0, 0, 0.2)')
+            }, function () {
+                $(this).css('background-color', 'inherit');
+            });
+            $('.top-nav').css('background-color', 'rgba(0, 0, 0, 0.5)')
+                /* left menu */
+                //            $("#portfolio-circle").css('r', '4');
+                //            $("#about-circle").css('r', '6');
             $(leftNavPortfolioDot).attr('r', '4');
             $(leftNavAboutDot).attr('r', '6');
             $(leftNavPortfolioText).attr({
@@ -119,19 +141,26 @@ $(portfolioWaypoint)
                 x: '30',
                 fill: 'black'
             });
-            $(topMenuLi).hover(function () {
-                $(this).css('background-color', 'rgba(0, 0, 0, 0.2')
-            }, function () {
-                $(this).css('background-color', 'inherit');
-            });
         }
     });
 
 $(skillsWaypoint)
     .waypoint(function (direction) {
         if (direction === 'down') {
-            $(topMenuLinks).css('color', 'black');
-            $(topMenuBottomLine).css('border-color', 'black');
+            /* top menu */
+            $(topMenuLinks).css('color', 'white');
+            //            $(topMenuBottomLine).css('border-color', 'black');
+            $(topMenuLi).hover(function () {
+                $(this).css({
+                    'background-color': 'rgba(0, 0, 0, 0.2)'
+                })
+            }, function () {
+                $(this).css({
+                    'background-color': "inherit"
+                })
+            });
+            $('.top-nav').css('background-color', 'rgba(0, 0, 0, 0.5)');
+            /* left menu */
             //            $("#skills-circle").css('r', '6');
             //            $("#portfolio-circle").css('r', '4');
             $(leftNavSkillsDot).attr('r', '6');
@@ -143,18 +172,15 @@ $(skillsWaypoint)
             $(leftNavPortfolioText).attr({
                 x: '-300'
             });
-            $(topMenuLi).hover(function () {
-                $(this).css({
-                    'background-color': 'rgba(0, 0, 0, 0.2'
-                })
-            }, function () {
-                $(this).css({
-                    'background-color': "inherit"
-                })
-            });
         } else {
-            $(topMenuLinks).css("color", "#FFFFFF");
-            $(topMenuBottomLine).css("border-color", "#FFFFFF");
+            /* top menu */
+            $(topMenuLinks).css("color", "black");
+            //            $(topMenuBottomLine).css("border-color", "#FFFFFF");
+            $(topMenuLi).hover(function () {
+                $(this).css("background-color", "inherit")
+            });
+            $('.top-nav').css('background-color', 'rgba(255, 255, 255, 0.6)');
+            /* left menu */
             //            $("#skills-circle").css('r', '4');
             //            $("#portfolio-circle").css('r', '6');
             $(leftNavSkillsDot).attr('r', '4');
@@ -166,9 +192,6 @@ $(skillsWaypoint)
                 x: '30',
                 fill: 'white'
             });
-            $(topMenuLi).hover(function () {
-                $(this).css("background-color", "inherit")
-            });
         }
     }, {
         offset: '5%' //fix waypoint position
@@ -177,6 +200,7 @@ $(skillsWaypoint)
 $(expWaypoint)
     .waypoint(function (direction) {
         if (direction === 'down') {
+            /* left menu */
             //            $("#skills-circle").css('r', '4');
             //            $("#exp-circle").css('r', '6');
             $(leftNavSkillsDot).attr('r', '4');
@@ -189,6 +213,7 @@ $(expWaypoint)
                 fill: 'black'
             });
         } else {
+            /* left menu */
             //            $("#exp-circle").css('r', '4');
             //            $("#skills-circle").css('r', '6');
             $(leftNavExpDot).attr('r', '4');
@@ -208,6 +233,7 @@ $(expWaypoint)
 $(contactWaypoint)
     .waypoint(function (direction) {
         if (direction === 'down') {
+            /* left menu */
             //            $("#contact-circle").css('r', '6');
             //            $("#exp-circle").css('r', '4');
             $(leftNavContactDot).attr('r', '6');
@@ -220,6 +246,7 @@ $(contactWaypoint)
                 x: '-300'
             });
         } else {
+            /* left menu */
             //            $("#contact-circle").css('r', '4');
             //            $("#exp-circle").css('r', '6');
             $(leftNavContactDot).attr('r', '4');
