@@ -5,13 +5,13 @@
 @font-face {
     font-family: Nexa;
     font-weight: lighter;
-    src: url('Fonts/Nexa Light.otf') format ('otf');
+    src: url('Fonts/NexaLight.ttf');
 }
 
 @font-face {
     font-family: Nexa;
     font-weight: bold;
-    src: url('Fonts/Nexa Bold.otf') format ('otf');
+    src: url('Fonts/NexaBold.otf');
 }
 
 
@@ -22,8 +22,8 @@
 
 body {
     margin: 0;
-    font-family: 'Roboto', 'Open Sans', sans-serif;
-    font-weight: 300;
+    font-family: 'Nexa', sans-serif;
+    font-weight: lighter;
 }
 
 .page-title {
