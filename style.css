@@ -96,14 +96,13 @@ body {
     height: 120px;
     top: 40%;
     z-index: 1;
-    text-align: center;
     padding: 0;
 }
 
 .dot-nav {
     width: 20%;
     background-color: rgb(219, 70, 30);
-    height: 120px;
+    height: 100%;
 }
 
 .dot-nav span {
@@ -120,65 +119,7 @@ body {
 
 .dot-nav span svg text {
     position: absolute;
-    height: 20px;
-    width:
 }
-
-
-/*
-.dot-nav ul {
-    position: relative; 
-    display: inline-block;
-    margin: 20px 0;
-    padding: 0;
-    list-style: none;
-    cursor: default;
-}
-
-.dot-nav li {
-    position: relative;
-    display: block;
-    float: left;
-    margin: 0 10px;
-    width: 18px;
-    height: 18px;
-    cursor: pointer;
-}
-
-.dot-nav li a {
-    top: 0;
-    left: 0;
-    width: 40%;
-    height: 40%;
-    outline: none;
-    border-radius: 50%;
-    background-color: #fff;
-    background-color: rgba(255, 255, 255, 1);
-    text-indent: -999em;
-    text-decoration: none;
-    color: rgba(255, 255, 255, 1);
-    cursor: pointer;
-    position: absolute;
-}
-
-.dot-nav li a:hover {
-    text-indent: 2em;
-}
-*/
-
-
-/*
-.blend {
-    mix-blend-mode: difference;
-}
-*/
-
-
-/*
-.blend-side-nav {
-    mix-blend-mode: exclusion;
-}
-*/
 
 
 /* ========== /NAV ==========*/
